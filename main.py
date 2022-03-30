@@ -75,3 +75,22 @@ print(a,b)
 #     plik.write('\n')
 # plik.close()
 # print(a)
+
+a = input('podaj liczbę: ')
+try:
+    a = int(a)
+    pierwiastek = math.sqrt(a)
+    print(pierwiastek)
+except ValueError:
+    if type(a) != int:
+        print('nie wczytano liczby')
+    elif a < 0:
+        print('liczba a nie może być mniejsza od 0')
+        
+        a = 1
+b = 0
+try:
+   result = a / b
+   print(result)
+except:
+   print("Error!")
